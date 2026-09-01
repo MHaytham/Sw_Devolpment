@@ -9,6 +9,7 @@ require('./models/Event');
 require('./models/Registration');
 
 const authRoutes = require('./routes/authRoutes');
+const eventRoutes = require('./routes/eventRoutes');
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.get('/api/health', (req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/events', eventRoutes);
 
 app.use((req, res) => {
   res.status(404).json({ message: 'Route not found' });
