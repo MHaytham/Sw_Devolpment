@@ -9,6 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "mongodb": "^7.6.0",
     "mongoose": "^8.5.1"
   }
 }
